@@ -6,8 +6,10 @@
 
   <title>Veritas Designs | Physics and STEM Education</title>
 
-  <meta name="description"
-        content="Physics tutoring, hands-on laboratory experiences, and STEM support for homeschool families, co-ops, and motivated students.">
+  <meta
+    name="description"
+    content="Physics tutoring, hands-on laboratory experiences, and STEM support for homeschool families, co-ops, and motivated students."
+  >
 
   <style>
     :root {
@@ -17,6 +19,7 @@
       --light: #f3f6f8;
       --text: #25313d;
       --white: #ffffff;
+      --shadow: 0 8px 24px rgba(16, 44, 76, 0.12);
     }
 
     * {
@@ -36,9 +39,13 @@
     }
 
     header {
-      background: var(--navy);
-      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 100;
       padding: 1rem 6%;
+      color: var(--white);
+      background: var(--navy);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     }
 
     nav {
@@ -56,17 +63,27 @@
       letter-spacing: 0.08rem;
     }
 
-    nav a {
+    .nav-links a {
+      margin-left: 1rem;
       color: var(--white);
       text-decoration: none;
-      margin-left: 1rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
     }
 
     .hero {
-      background: linear-gradient(135deg, var(--navy), var(--blue));
-      color: var(--white);
-      padding: 6rem 6%;
+      padding: 7rem 6%;
       text-align: center;
+      color: var(--white);
+      background:
+        radial-gradient(
+          circle at 50% 110%,
+          rgba(216, 167, 70, 0.25),
+          transparent 38%
+        ),
+        linear-gradient(135deg, var(--navy), var(--blue));
     }
 
     .hero-content {
@@ -76,24 +93,15 @@
 
     h1 {
       margin: 0 0 1rem;
+      font-family: Georgia, "Times New Roman", serif;
       font-size: clamp(2.25rem, 6vw, 4rem);
       line-height: 1.1;
     }
 
     .hero p {
-      font-size: 1.2rem;
       max-width: 700px;
       margin: 0 auto 2rem;
-    }
-
-    .button {
-      display: inline-block;
-      background: var(--gold);
-      color: var(--navy);
-      padding: 0.85rem 1.4rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
+      font-size: 1.2rem;
     }
 
     main {
@@ -103,18 +111,20 @@
 
     section {
       padding: 4rem 6%;
+      scroll-margin-top: 75px;
     }
 
     h2 {
-      color: var(--navy);
-      font-size: 2rem;
       margin-top: 0;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2rem;
     }
 
     .intro {
-      text-align: center;
       max-width: 800px;
       margin: auto;
+      text-align: center;
     }
 
     .cards {
@@ -125,20 +135,29 @@
     }
 
     .card {
+      padding: 1.5rem;
       background: var(--light);
       border-top: 4px solid var(--gold);
-      border-radius: 5px;
-      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
     }
 
     .card h3 {
-      color: var(--navy);
       margin-top: 0;
+      color: var(--navy);
     }
 
     .project {
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      padding-left: max(6%, calc((100vw - 1100px) / 2 + 6%));
+      padding-right: max(6%, calc((100vw - 1100px) / 2 + 6%));
       background: var(--light);
-      max-width: none;
     }
 
     .project-content {
@@ -147,22 +166,37 @@
     }
 
     .mission {
-      border-left: 4px solid var(--gold);
       padding-left: 1rem;
-      font-style: italic;
+      border-left: 4px solid var(--gold);
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.85rem 1.4rem;
+      color: var(--navy);
+      background: var(--gold);
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+      background: #e5b951;
+      transform: translateY(-2px);
     }
 
     .contact {
+      padding: 4rem 6%;
       text-align: center;
+      color: var(--white);
       background: var(--navy);
-      color: var(--white);
     }
 
-    .contact h2 {
-      color: var(--white);
-    }
-
+    .contact h2,
     .contact a:not(.button) {
       color: var(--white);
     }
@@ -170,8 +204,8 @@
     footer {
       padding: 1.5rem;
       text-align: center;
-      background: #091c31;
       color: #d9e1e8;
+      background: #091c31;
       font-size: 0.9rem;
     }
 
@@ -180,16 +214,25 @@
         flex-direction: column;
       }
 
-      nav a {
-        margin: 0 0.4rem;
+      .nav-links {
+        text-align: center;
+      }
+
+      .nav-links a {
+        margin: 0 0.35rem;
+        font-size: 0.9rem;
       }
 
       .hero {
-        padding: 4rem 6%;
+        padding: 5rem 6%;
       }
 
       .cards {
         grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 3.5rem 6%;
       }
     }
   </style>
@@ -198,14 +241,15 @@
 <body>
 
   <header>
-    <nav>
+    <nav aria-label="Main navigation">
       <div class="brand">VERITAS DESIGNS</div>
-    <div>
+
+      <div class="nav-links">
         #servicesServices</a>
         #projectCurrent Project</a>
         #aboutAbout</a>
-        #contactContact</a>
-    </div>
+        <a href="#contact">Contact</a>
+>
     </nav>
   </header>
 
@@ -219,18 +263,10 @@
         co-ops, and motivated students.
       </p>
 
-      <a class="button"
-         href="mailto:KevinKeefe@veritas-designs.com?subject=Veritas Designs Inquiry">
-        Contact Dr. Kevin Keefe
-      </a>
-    </div>
-  </section>
-
-  <main>
-
-    <section>
-      <div class="intro">
-        <h2>Empowering Children to Discover Truth</h2>
+      <a
+        class="button"
+        href="mailto:KevinKeefe@veritas-designs.com?subject=Veritas Designs Inquiry >
+        Contact >
 
         <p>
           Veritas Designs helps students investigate, measure, analyze,
@@ -245,6 +281,7 @@
       <h2>What Veritas Offers</h2>
 
       <div class="cards">
+
         <article class="card">
           <h3>Physics Tutoring</h3>
           <p>
@@ -269,38 +306,30 @@
             homeschool families, co-ops, and community organizations.
           </p>
         </article>
+
       </div>
     </section>
 
-  </main>
+    <section class="project" id="project">
+      <div class="project-content">
+        <h2>Current Project: Breakout Kinematics Lab</h2>
 
-  <section class="project" id="project">
-    <div class="project-content">
-      <h2>Current Project: Breakout Kinematics Lab</h2>
+        <p>
+          Veritas is developing a complete projectile-motion learning
+          experience combining laboratory apparatus, student and
+          instructor materials, assessment support, instructional videos,
+          and founder-guided implementation.
+        </p>
 
-      <p>
-        Veritas is developing a complete projectile-motion learning
-        experience combining laboratory apparatus, student and instructor
-        materials, assessment support, instructional videos, and
-        founder-guided implementation.
-      </p>
+        <p>
+          We are currently seeking conversations with homeschool families,
+          co-ops, and community hosts interested in hands-on high-school
+          physics.
+        </p>
 
-      <p>
-        We are currently seeking conversations with homeschool families,
-        co-ops, and community hosts interested in hands-on high-school
-        physics.
-      </p>
-
-      <a class="button"
-         href="mailto:KevinKeefe@veritas-designs.com?subject=Breakout Kinematics Lab">
-        Ask About the Lab
-      </a>
-    </div>
-  </section>
-
-  <main>
-
-    <section id="about">
+        <a
+          class="button"
+          href="mailtot">
       <h2>About Dr. Kevin Keefe</h2>
 
       <p>
@@ -332,6 +361,11 @@
       </a>
     </p>
 
-    <a class="button"
-       href="mailto:KevinKeefe@veritas-designs.com?subject=Veritas Designs Inquiry">
-      Contact Dr
+      </section>
+
+  <footer>
+    &copy; 2026 Veritas Designs. All rights reserved.
+  </footer>
+
+</body>
+</html>
