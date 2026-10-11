@@ -22,6 +22,16 @@
   <meta name="description" content="Veritas Designs explores physics instruction and hands-on STEM learning for homeschool families, co-ops, and motivated students.">
   <title>Veritas Designs | Physics and STEM Education</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    #about.about-team { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; }
+    #about .about-copy { min-width: 0; }
+    #about .team-photo { display: block; width: 100%; max-width: 420px; height: auto; border-radius: 18px; justify-self: center; }
+    #about .about-copy h3 { margin-top: 1.5rem; margin-bottom: .5rem; }
+    @media (max-width: 720px) {
+      #about.about-team { grid-template-columns: 1fr; }
+      #about .team-photo { max-width: 420px; }
+    }
+  </style>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -89,13 +99,17 @@
       </div>
     </section>
 
-    <section class="section-wrap about" id="about" aria-labelledby="about-title">
+    <section class="section-wrap about about-team" id="about" aria-labelledby="about-title">
       <div class="about-copy">
-        <h2 id="about-title">About Kevin Keefe, Ph.D.</h2>
+        <h2 id="about-title">Meet the people behind Veritas</h2>
+        <p>We're a Maryland family building a new program to support homeschool high schoolers through AP-level STEM coursework, online lessons, in-person labs, and a community of students learning together.</p>
+        <h3>Coach Ashley Keefe</h3>
+        <p>Ashley is the founder of Veritas Designs and a homeschool mom of two. She brings a background in kinesiology and previously held certifications in USA Powerlifting and training.</p>
+        <h3>Dr. Kevin Keefe</h3>
         <p>Kevin is a physicist and former state-certified high-school teacher and adjunct professor. He has taught AP Physics, high-school chemistry and biology, and undergraduate physics and astronomy.</p>
-        <p class="mission">“Empowering children to discover truth.”</p>
+        <p class="mission">&ldquo;Empowering children to discover truth.&rdquo;</p>
       </div>
-      <img class="about-logo" src="Dark_Logo.png" alt="" width="489" height="589" loading="lazy">
+      <img class="team-photo" src="team-photo.jpg" alt="Two people outdoors with a coastal landscape in the background" width="958" height="960" loading="lazy">
     </section>
 
     <section class="contact" id="contact" aria-labelledby="contact-title">
