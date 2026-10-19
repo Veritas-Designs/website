@@ -27,7 +27,6 @@
     #about.about-team { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; }
     #about .about-copy { min-width: 0; }
     #about .team-photo { display: block; width: 100%; max-width: 420px; height: auto; border-radius: 18px; justify-self: center; }
-    #about .about-copy h3 { margin-top: 1.5rem; margin-bottom: .5rem; }
     @media (max-width: 720px) {
       #about.about-team { grid-template-columns: 1fr; }
       #about .team-photo { max-width: 420px; }
@@ -49,7 +48,7 @@
 <div class="nav-links">
 <a href="#approach">Our Approach</a>
 <a href="#services">What We're Building</a>
-<a href="#about">About</a>
+<a href="#about">About Us</a>
 <a href="#contact">Contact</a>
 </div>
 </nav>
@@ -135,14 +134,16 @@
 <section aria-labelledby="about-title" class="section-wrap about about-team" id="about">
 <div class="about-copy"><h2 id="about-title">Meet the people behind Veritas</h2>
 <p>We are a Maryland family developing a STEM homeschool academy around rigorous instruction, parental involvement, and the needs families share with us.</p>
+<article class="person-bio">
 <h3>Ashley Keefe, CEO</h3>
 <p>
   A full-time homeschool mom of two, Ashley brings a background in kinesiology and
   experience as a certified powerlifting coach and trainer. She is building
   Veritas alongside Kevin, with a focus on keeping parents actively involved as
-  their students pursue advanced math and science.  direction with families'
-  needs.
+  their students pursue advanced math and science.
 </p>
+ </article>
+<article class="person-bio">
 <h3>Kevin Keefe, Ph.D.</h3>
 <p>
   Kevin is a physicist, former state-certified high-school teacher, and former
@@ -155,15 +156,14 @@
   algebra, middle- and high-school science, and advanced physics. The initial
   course selection will depend on demand and delivery capacity.
 </p>
+</article>
 <p class="mission">Empowering everyone to discover truth.</p></div>
 <img alt="Two people outdoors with a coastal landscape in the background" class="team-photo" height="960" loading="lazy" src="team-photo.jpg" width="958"/>
 </section>
 <section aria-labelledby="contact-title" class="contact" id="contact"><div class="section-wrap contact-inner">
 <h2 id="contact-title">Start a conversation</h2>
 <p>Have a question about Veritas or your student's needs? Send us a note. To indicate course preferences, use the interest questionnaire above.</p>
-<div style="max-width: 640px; margin: 24px auto;
-                    padding: 24px; background: #ffffff;
-                    border-radius: 12px;">
+<div class="contact-form-wrap">
 <iframe data-tally-src="https://tally.so/embed/EkjeDN?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" height="566" loading="lazy" style="display: block; border: 0;" title="Veritas Designs contact form" width="100%">
 </iframe>
 </div>
