@@ -215,14 +215,38 @@ h3 {
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: var(--shadow);
+  transition: background-color .2s ease;
+}
+
+.card:hover {
+  background: var(--white);
 }
 
 .card h3 {
-  margin: 0 0 .5rem;
+  color: var(--navy);
+  margin: 0;
 }
 
-.card p {
-  margin: 0;
+.card ul {
+  margin: .75rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.card li {
+  padding-left: .15rem;
+}
+
+.card li + li {
+  margin-top: .55rem;
+}
+
+.card li::marker {
+  color: var(--blue);
+}
+
+.card strong {
+  color: var(--purple);
+  font-weight: 700;
 }
 
 /* Current project */
