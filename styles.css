@@ -265,42 +265,6 @@ h3 {
   max-width: 72ch;
 }
 
-.project-form-wrap {
-  max-width: 760px;
-  margin: 1.5rem auto 0;
-  padding: clamp(.75rem, 2vw, 1.25rem);
-  background: var(--white);
-  border: 1px solid #e9e5f0;
-  border-radius: 14px;
-  box-shadow: var(--shadow);
-  scroll-margin-top: 100px;
-}
-
-.project-form-wrap[hidden] {
-  display: none;
-}
-
-.interest-form-frame {
-  display: block;
-  width: 100%;
-  height: 900px;
-  border: 0;
-  border-radius: 8px;
-  background: var(--white);
-}
-
-.project-inner > .button {
-  border: 0;
-  font: inherit;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.project-inner > .button:focus-visible {
-  outline: 3px solid var(--purple);
-  outline-offset: 4px;
-}
-
 .project .eyebrow {
   color: #326f69;
 }
@@ -548,3 +512,14 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 720px) {
+  .site-header {
+    position: static;
+  }
+
+  #project {
+    scroll-margin-top: 1rem;
+  }
+}
+t s

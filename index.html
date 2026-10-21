@@ -65,66 +65,6 @@
       #project { scroll-margin-top: 6rem; }
       html { scroll-behavior: smooth; }
 
-      #project .course-interest-disclosure {
-      margin-top: 1.5rem;
-      min-width: 0;
-      }
-
-      #project .course-interest-disclosure > summary {
-      display: inline-flex;
-      align-items: center;
-      gap: .75rem;
-      cursor: pointer;
-      list-style: none;
-      font: inherit;
-      }
-
-      #project .course-interest-disclosure > summary::-webkit-details-marker {
-      display: none;
-      }
-
-      #project .course-interest-disclosure > summary::after {
-      content: "+";
-      font-size: 1.35em;
-      line-height: 1;
-      }
-
-      #project .course-interest-disclosure[open] > summary::after {
-      content: "-";
-      }
-
-      #project .course-interest-disclosure > summary:focus-visible {
-      outline: 3px solid currentColor;
-      outline-offset: 5px;
-      }
-
-      #project .course-interest-panel {
-      box-sizing: border-box;
-      width: 100%;
-      max-width: 850px;
-      margin: 1.25rem auto 0;
-      padding: clamp(.25rem, 1.5vw, 1rem);
-      background: #fff;
-      color: #172b35;
-      border: 1px solid #d8e1e5;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, .10);
-      overflow: hidden;
-      }
-
-      #project .course-interest-frame {
-      display: block;
-      width: 100%;
-      height: 900px;
-      border: 0;
-      background: #fff;
-      }
-
-      @media (max-width: 600px) {
-      #project .course-interest-panel { border-radius: 10px; padding: 0; }
-      #project .course-interest-frame { height: 1050px; }
-      }
-
       @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       }
@@ -252,12 +192,7 @@
           Planning further ahead? Future course inquiries are welcome too.
           Submitting this form does not commit you to enrollment or payment.
         </p>
-        <details class="course-interest-disclosure" id="course-interest">
-          <summary class="button">Discuss Starting a Course</summary>
-          <div class="course-interest-panel">
-            <iframe class="course-interest-frame" height="900" loading="lazy" src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=vS-6yR8ROUSunF3g6T-K3Ko-bfYmUD9FiA7j6zIf7G5UM0o4RDdDNjlQOFpXSllMVUM3R1hSQlI2Wi4u&amp;embed=true" title="Veritas Designs course interest questionnaire" width="100%"></iframe>
-          </div>
-        </details>
+        <a class="button" href="course-interest.html">Discuss Starting a Course</a>
       </div>
     </section>
     <section aria-labelledby="about-title" class="section-wrap about about-team" id="about">
