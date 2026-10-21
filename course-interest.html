@@ -1,94 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Discuss a possible math or science course with Veritas Designs."
-    />
-    <title>Discuss Starting a Course | Veritas Designs</title>
-    <link href="styles.css" rel="stylesheet" />
-    <style>
-      .course-interest-page {
-        min-height: calc(100vh - 76px);
-        background: var(--cream);
-      }
-
-      .course-interest-page .section-wrap {
-        max-width: 920px;
-      }
-
-      .course-interest-panel {
-        box-sizing: border-box;
-        width: 100%;
-        max-width: 850px;
-        margin: 1.5rem auto 0;
-        padding: clamp(.25rem, 1.5vw, 1rem);
-        overflow: hidden;
-        background: var(--white);
-        border: 1px solid #d8e1e5;
-        border-radius: 16px;
-        box-shadow: var(--shadow);
-      }
-
-      .course-interest-frame {
-        display: block;
-        width: 100%;
-        height: 900px;
-        border: 0;
-        background: var(--white);
-      }
-
-      .course-interest-mobile-link {
-        display: none;
-      }
-
-      @media (max-width: 760px) {
-        .course-interest-panel {
-          padding: 0;
-          border-radius: 10px;
-        }
-
-        .course-interest-frame {
-          display: none;
-        }
-
-        .course-interest-mobile-link {
-          display: inline-block;
-          margin: 1rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav-wrap" aria-label="Main navigation">
-        <a class="brand" href="index.html#top" aria-label="Veritas Designs home">
-          <img src="Dark_Logo.png" alt="" width="38" height="48" />
-          <span>VERITAS DESIGNS</span>
-        </a>
-        <a class="button" href="index.html#project">Back to the main site</a>
-      </nav>
-    </header>
-    <main class="course-interest-page" id="course-interest">
-      <section class="section-wrap" aria-labelledby="course-interest-title">
-        <h1 id="course-interest-title">Discuss Starting a Course</h1>
-        <div class="course-interest-panel">
-          <a
-            class="button course-interest-mobile-link"
-            href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=vS-6yR8ROUSunF3g6T-K3Ko-bfYmUD9FiA7j6zIf7G5UM0o4RDdDNjlQOFpXSllMVUM3R1hSQlI2Wi4u&amp;embed=true"
-          >Open the questionnaire full screen</a>
-          <iframe
-            class="course-interest-frame"
-            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=vS-6yR8ROUSunF3g6T-K3Ko-bfYmUD9FiA7j6zIf7G5UM0o4RDdDNjlQOFpXSllMVUM3R1hSQlI2Wi4u&amp;embed=true"
-            title="Veritas Designs course interest questionnaire"
-            width="100%"
-            height="900"
-            loading="lazy"
-          ></iframe>
-        </div>
-      </section>
-    </main>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>Course Inquiry | Veritas Designs</title>
+  <link rel="stylesheet" href="course-inquiry.css">
+</head>
+<body>
+  <header class="inquiry-header">
+    <a class="brand" href="index.html#project" aria-label="Veritas Designs, return to course information">
+      <img src="Dark_Logo.png" width="32" height="40" alt="">
+      <span>VERITAS DESIGNS</span>
+    </a>
+    <a class="back-link" href="index.html#project">Back to Veritas</a>
+  </header>
+  <main class="inquiry-main" aria-label="Course inquiry questionnaire">
+    <iframe
+      class="inquiry-frame"
+      src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=vS-6yR8ROUSunF3g6T-K3Ko-bfYmUD9FiA7j6zIf7G5UM0o4RDdDNjlQOFpXSllMVUM3R1hSQlI2Wi4u&amp;embed=true"
+      title="Veritas Designs course inquiry, hosted by Microsoft Forms"
+    ></iframe>
+  </main>
+</body>
 </html>
