@@ -34,7 +34,41 @@
   </style>
 <style>
     .hero .hero-note { font-size: 0.95rem; margin-top: 1rem; }
-</style></head>
+</style>
+<style>
+  #project { scroll-margin-top: 6rem; }
+  html { scroll-behavior: smooth; }
+  #project .course-interest-disclosure { margin-top: 1.5rem; min-width: 0; }
+  #project .course-interest-disclosure > summary {
+    display: inline-flex; align-items: center; gap: .75rem;
+    cursor: pointer; list-style: none; font: inherit;
+  }
+  #project .course-interest-disclosure > summary::-webkit-details-marker { display: none; }
+  #project .course-interest-disclosure > summary::after { content: "+"; font-size: 1.35em; line-height: 1; }
+  #project .course-interest-disclosure[open] > summary::after { content: "-"; }
+  #project .course-interest-disclosure > summary:focus-visible {
+    outline: 3px solid currentColor; outline-offset: 5px;
+  }
+  #project .course-interest-panel {
+    box-sizing: border-box; width: 100%; max-width: 850px;
+    margin: 1.25rem auto 0; padding: clamp(.25rem, 1.5vw, 1rem);
+    background: #fff; color: #172b35;
+    border: 1px solid #d8e1e5; border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .10);
+    overflow: hidden;
+  }
+  #project .course-interest-frame {
+    display: block; width: 100%; height: 900px; border: 0; background: #fff;
+  }
+  @media (max-width: 600px) {
+    #project .course-interest-panel { border-radius: 10px; padding: 0; }
+    #project .course-interest-frame { height: 1050px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-KDNDTB9P" style="display:none;visibility:hidden" width="0"></iframe></noscript>
@@ -63,10 +97,12 @@
   <span>Your homeschool.</span>
 </h1>
 <p>
-  Instructor-led math and science courses for students ready for deeper learning.
+  Instructor-led math and science courses for students ready for deeper
+  learning.  Live math and science lessons, curriculum, and hands-on labs—all in
+  one place. 
 </p>
 <div class="hero-actions">
-  <a aria-label="Share your course interests (opens in a new tab)" class="button" href="https://forms.cloud.microsoft/r/6KLybfc7jz" rel="noopener noreferrer" target="_blank">Share Your Course Interests</a>
+  <a class="button" href="#project">Share Your Course Interests</a>
   <a class="button button-secondary" href="#services">Explore Learning Options</a>
 </div>
 <p class="hero-note">In-person in Severn or fully virtual.</p></div>
@@ -144,8 +180,13 @@
   a conversation. It is not enrollment, and course availability, tuition, and
   start dates are not yet finalized.
 </p>
-<a aria-label="Share your interest (opens in a new tab)" class="button" href="https://forms.cloud.microsoft/r/6KLybfc7jz" rel="noopener noreferrer" target="_blank">Share Your Interest</a>
-<p>Questionnaire opens in a new tab.</p></div>
+<details class="course-interest-disclosure" id="course-interest">
+  <summary class="button">Share Your Interest</summary>
+  <div class="course-interest-panel">
+<iframe class="course-interest-frame" height="900" loading="lazy" src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=vS-6yR8ROUSunF3g6T-K3Ko-bfYmUD9FiA7j6zIf7G5UM0o4RDdDNjlQOFpXSllMVUM3R1hSQlI2Wi4u&amp;embed=true" title="Veritas Designs course interest questionnaire" width="100%"></iframe>
+  </div>
+</details>
+</div>
 </section>
 <section aria-labelledby="about-title" class="section-wrap about about-team" id="about">
 <div class="about-copy"><h2 id="about-title">Meet the people behind Veritas</h2>
