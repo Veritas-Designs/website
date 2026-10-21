@@ -1,265 +1,332 @@
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GMT11YTWMC"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMT11YTWMC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-GMT11YTWMC');
+    </script>
 
-    gtag('config', 'G-GMT11YTWMC');
-  </script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KDNDTB9P');</script>
-<!-- End Google Tag Manager -->
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Veritas Designs is developing STEM courses for homeschool families in Severn, Maryland, with in-person and fully virtual participation. Help shape our first offerings." name="description"/>
-<title>Veritas Designs | STEM Homeschool Academy</title>
-<link href="styles.css" rel="stylesheet"/>
-<style>
-    #about.about-team { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; }
-    #about .about-copy { min-width: 0; }
-    #about .team-photo { display: block; width: 100%; max-width: 420px; height: auto; border-radius: 18px; justify-self: center; }
-    @media (max-width: 720px) {
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0];
+      var j = d.createElement(s);
+      var dl = l !== 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-KDNDTB9P');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+    name="description"
+    content="Veritas Designs is developing STEM courses for homeschool families in Severn, Maryland, with in-person and fully virtual participation. Help shape our first offerings."
+    />
+    <title>Veritas Designs | STEM Homeschool Academy</title>
+    <link href="styles.css" rel="stylesheet" />
+
+    <style>
+      #about.about-team {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: clamp(1.5rem, 4vw, 3rem);
+      align-items: center;
+      }
+
+      #about .about-copy { min-width: 0; }
+
+      #about .team-photo {
+      display: block;
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      border-radius: 18px;
+      justify-self: center;
+      }
+
+      @media (max-width: 720px) {
       #about.about-team { grid-template-columns: 1fr; }
       #about .team-photo { max-width: 420px; }
-    }
-  </style>
-<style>
-    .hero .hero-note { font-size: 0.95rem; margin-top: 1rem; }
-</style>
-<style>
-  #project { scroll-margin-top: 6rem; }
-  html { scroll-behavior: smooth; }
-  #project .course-interest-disclosure { margin-top: 1.5rem; min-width: 0; }
-  #project .course-interest-disclosure > summary {
-    display: inline-flex; align-items: center; gap: .75rem;
-    cursor: pointer; list-style: none; font: inherit;
-  }
-  #project .course-interest-disclosure > summary::-webkit-details-marker { display: none; }
-  #project .course-interest-disclosure > summary::after { content: "+"; font-size: 1.35em; line-height: 1; }
-  #project .course-interest-disclosure[open] > summary::after { content: "-"; }
-  #project .course-interest-disclosure > summary:focus-visible {
-    outline: 3px solid currentColor; outline-offset: 5px;
-  }
-  #project .course-interest-panel {
-    box-sizing: border-box; width: 100%; max-width: 850px;
-    margin: 1.25rem auto 0; padding: clamp(.25rem, 1.5vw, 1rem);
-    background: #fff; color: #172b35;
-    border: 1px solid #d8e1e5; border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .10);
-    overflow: hidden;
-  }
-  #project .course-interest-frame {
-    display: block; width: 100%; height: 900px; border: 0; background: #fff;
-  }
-  @media (max-width: 600px) {
-    #project .course-interest-panel { border-radius: 10px; padding: 0; }
-    #project .course-interest-frame { height: 1050px; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-  }
-</style>
-</head>
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-KDNDTB9P" style="display:none;visibility:hidden" width="0"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<header class="site-header">
-<nav aria-label="Main navigation" class="nav-wrap">
-<a aria-label="Veritas Designs, back to top" class="brand" href="#top">
-<img alt="" height="48" src="Dark_Logo.png" width="38"/>
-<span>VERITAS DESIGNS</span>
-</a>
-<div class="nav-links">
-<a href="#approach">Our Approach</a>
-<a href="#services">What We're Building</a>
-<a href="#about">About Us</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
-</header>
-<main id="top">
-<section aria-labelledby="hero-title" class="hero">
-<div class="hero-inner">
-<div class="hero-copy">
-<p class="eyebrow">STEM · HOMESCHOOL · MARYLAND</p>
-<h1 id="hero-title">
-  <span>Advanced STEM.</span>
-  <span>Your homeschool.</span>
-</h1>
-<p>
-  Instructor-led math and science courses for students ready for deeper
-  learning.  Live math and science lessons, curriculum, and hands-on labs—all in
-  one place. 
-</p>
-<div class="hero-actions">
-  <a class="button" href="#project">Share Your Course Interests</a>
-  <a class="button button-secondary" href="#services">Explore Learning Options</a>
-</div>
-<p class="hero-note">In-person in Severn or fully virtual.</p></div>
-<img alt="Veritas Designs flame logo" class="hero-logo" height="493" src="Dark_Logo.png" width="392"/>
-</div>
-</section>
-<section class="approach-band" id="approach" aria-labelledby="intro-title">
-  <div class="section-wrap approach-inner">
-    <img
-      class="approach-photo"
-      src="veritas-learning-workspace.webp"
-      alt="Illustrative home STEM workspace with a laptop, notebook, electronics and chalkboard"
-      width="1200"
-      height="800"
-      loading="lazy">
-    <div class="approach-copy">
-      <p class="approach-label">OUR APPROACH</p>
-      <h2 id="intro-title">
-        <span>Expert instruction.</span>
-        <span>Family-directed learning.</span>
-      </h2>
-      <p>
-        Our goal is to help homeschool students understand why ideas work,
-        connect mathematics with scientific investigation, and approach
-        unfamiliar problems with confidence.
-      </p>
-      <p>
-        Through learning by doing, we aim to build the reasoning skills
-        and independence students need for college and beyond.
-      </p>
-    </div>
-  </div>
-</section>
+      }
 
-<section aria-labelledby="services-title" class="section-wrap" id="services">
+      .hero .hero-note { font-size: 0.95rem; margin-top: 1rem; }
 
-<h2 id="services-title">Learning options we are developing</h2>
-<div class="cards">
-<article class="card">
-<h3>Math and science courses</h3>
-<ul>
-  <li><strong>Instructor-led courses</strong> in math and science.</li>
-  <li><strong>Homeschool-directed</strong> learning shaped by family needs.</li>
-  <li><strong>Foundational through advanced study</strong>, including AP preparation.</li>
-</ul>
-</article>
-<article class="card">
-<h3>In person or fully virtual</h3>
-<ul>
-  <li><strong>Local participation</strong> in Severn or entirely online.</li>
-  <li><strong>Live-streamed and recorded sessions</strong> are part of the planned model.</li>
-  <li><strong>Schedules and course details</strong> are still being developed.</li>
-</ul>
-</article>
-<article class="card">
-<h3>Learning by investigation</h3>
-<ul>
-  <li><strong>Reasoning and problem solving</strong> to build understanding.</li>
-  <li><strong>Hands-on labs</strong> and investigations to explore ideas.</li>
-  <li><strong>In-person labs and home investigations</strong> with virtual assistance are being evaluated for suitable courses.</li>
-</ul>
-</article>
-</div>
-</section>
-<section aria-labelledby="project-title" class="project" id="project">
-<div class="section-wrap project-inner"><p class="eyebrow">HELP SHAPE THE FIRST OFFERINGS</p>
-<h2 id="project-title">What does your student need next?</h2>
-<p>
-  We are listening to homeschool families before choosing our first subjects,
-  schedules, and course formats. Tell us which math and science subjects your
-  family would seriously consider.
-</p>
-<p>
-  The short questionnaire lets you share interest or feedback without scheduling
-  a conversation. It is not enrollment, and course availability, tuition, and
-  start dates are not yet finalized.
-</p>
-<details class="course-interest-disclosure" id="course-interest">
-  <summary class="button">Share Your Interest</summary>
-  <div class="course-interest-panel">
-<iframe class="course-interest-frame" height="900" loading="lazy" src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=vS-6yR8ROUSunF3g6T-K3Ko-bfYmUD9FiA7j6zIf7G5UM0o4RDdDNjlQOFpXSllMVUM3R1hSQlI2Wi4u&amp;embed=true" title="Veritas Designs course interest questionnaire" width="100%"></iframe>
-  </div>
-</details>
-</div>
-</section>
-<section aria-labelledby="about-title" class="section-wrap about about-team" id="about">
-<div class="about-copy"><h2 id="about-title">Meet the people behind Veritas</h2>
-<p>We are a Maryland family developing a STEM homeschool academy around rigorous instruction, parental involvement, and the needs families share with us.</p>
-<article class="person-bio">
-<h3>Ashley Keefe, CEO</h3>
-<p>
-  A full-time homeschool mom of two, Ashley brings a background in kinesiology and
-  experience as a certified powerlifting coach and trainer. She is building
-  Veritas alongside Kevin, with a focus on keeping parents actively involved as
-  their students pursue advanced math and science.
-</p>
- </article>
-<article class="person-bio">
-<h3>Kevin Keefe, Ph.D.</h3>
-<p>
-  Kevin is a physicist, former state-certified high-school teacher, and former
-  adjunct professor. His experience includes AP Physics, high-school chemistry
-  and biology, undergraduate physics and astronomy, and graduate-level physics
-  and electrical engineering.
-</p>
-<p>
-  His teaching range spans pre-algebra through differential equations and linear
-  algebra, middle- and high-school science, and advanced physics. The initial
-  course selection will depend on demand and delivery capacity.
-</p>
-</article>
-<p class="mission">Empowering everyone to discover truth.</p></div>
-<img alt="Two people outdoors with a coastal landscape in the background" class="team-photo" height="960" loading="lazy" src="team-photo.jpg" width="958"/>
-</section>
-<section aria-labelledby="contact-title" class="contact" id="contact"><div class="section-wrap contact-inner">
-<h2 id="contact-title">Start a conversation</h2>
-<p>Have a question about Veritas or your student's needs? Send us a note. To indicate course preferences, use the interest questionnaire above.</p>
-<div class="contact-form-wrap">
-<iframe data-tally-src="https://tally.so/embed/EkjeDN?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" height="566" loading="lazy" style="display: block; border: 0;" title="Veritas Designs contact form" width="100%">
-</iframe>
-</div>
-<p class="contact-email">
+      #project { scroll-margin-top: 6rem; }
+      html { scroll-behavior: smooth; }
+
+      #project .course-interest-disclosure {
+      margin-top: 1.5rem;
+      min-width: 0;
+      }
+
+      #project .course-interest-disclosure > summary {
+      display: inline-flex;
+      align-items: center;
+      gap: .75rem;
+      cursor: pointer;
+      list-style: none;
+      font: inherit;
+      }
+
+      #project .course-interest-disclosure > summary::-webkit-details-marker {
+      display: none;
+      }
+
+      #project .course-interest-disclosure > summary::after {
+      content: "+";
+      font-size: 1.35em;
+      line-height: 1;
+      }
+
+      #project .course-interest-disclosure[open] > summary::after {
+      content: "-";
+      }
+
+      #project .course-interest-disclosure > summary:focus-visible {
+      outline: 3px solid currentColor;
+      outline-offset: 5px;
+      }
+
+      #project .course-interest-panel {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 850px;
+      margin: 1.25rem auto 0;
+      padding: clamp(.25rem, 1.5vw, 1rem);
+      background: #fff;
+      color: #172b35;
+      border: 1px solid #d8e1e5;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .10);
+      overflow: hidden;
+      }
+
+      #project .course-interest-frame {
+      display: block;
+      width: 100%;
+      height: 900px;
+      border: 0;
+      background: #fff;
+      }
+
+      @media (max-width: 600px) {
+      #project .course-interest-panel { border-radius: 10px; padding: 0; }
+      #project .course-interest-frame { height: 1050px; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-KDNDTB9P"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden"
+    ></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Veritas Designs, back to top">
+        <img src="Dark_Logo.png" alt="" width="38" height="48" />
+        <span>VERITAS DESIGNS</span>
+      </a>
+      <div class="nav-links">
+        <a href="#approach">Our Approach</a>
+        <a href="#services">What We're Building</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main id="top">
+    <section aria-labelledby="hero-title" class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">STEM Â· HOMESCHOOL Â· MARYLAND</p>
+          <h1 id="hero-title">
+            <span>Advanced STEM.</span>
+            <span>Your homeschool.</span>
+          </h1>
+          <p>
+            Instructor-led math and science courses for students ready for deeper
+            learning.  Live math and science lessons, curriculum, and hands-on labsâ€”all in
+            one place.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#project">Share Your Course Interests</a>
+            <a class="button button-secondary" href="#services">Explore Learning Options</a>
+          </div>
+          <p class="hero-note">In-person in Severn or fully virtual.</p></div>
+        <img alt="Veritas Designs flame logo" class="hero-logo" height="493" src="Dark_Logo.png" width="392"/>
+      </div>
+    </section>
+    <section class="approach-band" id="approach" aria-labelledby="intro-title">
+      <div class="section-wrap approach-inner">
+        <img
+        class="approach-photo"
+        src="veritas-learning-workspace.webp"
+        alt="Illustrative home STEM workspace with a laptop, notebook, electronics and chalkboard"
+        width="1200"
+        height="800"
+        loading="lazy">
+        <div class="approach-copy">
+          <p class="approach-label">OUR APPROACH</p>
+          <h2 id="intro-title">
+            <span>Expert instruction.</span>
+            <span>Family-directed learning.</span>
+          </h2>
+          <p>
+            Our goal is to help homeschool students understand why ideas work,
+            connect mathematics with scientific investigation, and approach
+            unfamiliar problems with confidence.
+          </p>
+          <p>
+            Through learning by doing, we aim to build the reasoning skills
+            and independence students need for college and beyond.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="services-title" class="section-wrap" id="services">
+
+      <h2 id="services-title">Learning options we are developing</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Math and science courses</h3>
+          <ul>
+            <li><strong>Instructor-led courses</strong> in math and science.</li>
+            <li><strong>Homeschool-directed</strong> learning shaped by family needs.</li>
+            <li><strong>Foundational through advanced study</strong>, including AP preparation.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>In person or fully virtual</h3>
+          <ul>
+            <li><strong>Local participation</strong> in Severn or entirely online.</li>
+            <li><strong>Live-streamed and recorded sessions</strong> are part of the planned model.</li>
+            <li><strong>Schedules and course details</strong> are still being developed.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Learning by investigation</h3>
+          <ul>
+            <li><strong>Reasoning and problem solving</strong> to build understanding.</li>
+            <li><strong>Hands-on labs</strong> and investigations to explore ideas.</li>
+            <li><strong>In-person labs and home investigations</strong> with virtual assistance are being evaluated for suitable courses.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section aria-labelledby="project-title" class="project" id="project">
+      <div class="section-wrap project-inner"><p class="eyebrow">HELP SHAPE THE FIRST OFFERINGS</p>
+        <h2 id="project-title">What does your student need next?</h2>
+        <p>
+          We are listening to homeschool families before choosing our first subjects,
+          schedules, and course formats. Tell us which math and science subjects your
+          family would seriously consider.
+        </p>
+        <p>
+          The short questionnaire lets you share interest or feedback without scheduling
+          a conversation. It is not enrollment, and course availability, tuition, and
+          start dates are not yet finalized.
+        </p>
+        <details class="course-interest-disclosure" id="course-interest">
+          <summary class="button">Share Your Interest</summary>
+          <div class="course-interest-panel">
+            <iframe class="course-interest-frame" height="900" loading="lazy" src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=vS-6yR8ROUSunF3g6T-K3Ko-bfYmUD9FiA7j6zIf7G5UM0o4RDdDNjlQOFpXSllMVUM3R1hSQlI2Wi4u&amp;embed=true" title="Veritas Designs course interest questionnaire" width="100%"></iframe>
+          </div>
+        </details>
+      </div>
+    </section>
+    <section aria-labelledby="about-title" class="section-wrap about about-team" id="about">
+      <div class="about-copy"><h2 id="about-title">Meet the people behind Veritas</h2>
+        <p>We are a Maryland family developing a STEM homeschool academy around rigorous instruction, parental involvement, and the needs families share with us.</p>
+        <article class="person-bio">
+          <h3>Ashley Keefe, CEO</h3>
+          <p>
+            A full-time homeschool mom of two, Ashley brings a background in kinesiology and
+            experience as a certified powerlifting coach and trainer. She is building
+            Veritas alongside Kevin, with a focus on keeping parents actively involved as
+            their students pursue advanced math and science.
+          </p>
+        </article>
+        <article class="person-bio">
+          <h3>Kevin Keefe, Ph.D.</h3>
+          <p>
+            Kevin is a physicist, former state-certified high-school teacher, and former
+            adjunct professor. His experience includes AP Physics, high-school chemistry
+            and biology, undergraduate physics and astronomy, and graduate-level physics
+            and electrical engineering.
+          </p>
+          <p>
+            His teaching range spans pre-algebra through differential equations and linear
+            algebra, middle- and high-school science, and advanced physics. The initial
+            course selection will depend on demand and delivery capacity.
+          </p>
+        </article>
+        <p class="mission">Empowering everyone to discover truth.</p></div>
+      <img alt="Two people outdoors with a coastal landscape in the background" class="team-photo" height="960" loading="lazy" src="team-photo.jpg" width="958"/>
+    </section>
+    <section aria-labelledby="contact-title" class="contact" id="contact"><div class="section-wrap contact-inner">
+        <h2 id="contact-title">Start a conversation</h2>
+        <p>Have a question about Veritas or your student's needs? Send us a note. To indicate course preferences, use the interest questionnaire above.</p>
+        <div class="contact-form-wrap">
+          <iframe data-tally-src="https://tally.so/embed/EkjeDN?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" height="566" loading="lazy" style="display: block; border: 0;" title="Veritas Designs contact form" width="100%">
+          </iframe>
+        </div>
+        <p class="contact-email">
           Prefer email?
           <a href="mailto:KevinKeefe@veritas-designs.com">
             KevinKeefe@veritas-designs.com
           </a>
-</p>
-</div></section>
-<script>
-    (function () {
+        </p>
+      </div></section>
+    <script>
+      (function () {
       var d = document;
       var url = "https://tally.so/widgets/embed.js";
 
       function loadForms() {
-        if (typeof Tally !== "undefined") {
-          Tally.loadEmbeds();
-        } else {
-          d.querySelectorAll(
-            "iframe[data-tally-src]:not([src])"
-          ).forEach(function (frame) {
-            frame.src = frame.dataset.tallySrc;
-          });
-        }
+      if (typeof Tally !== "undefined") {
+      Tally.loadEmbeds();
+      } else {
+      d.querySelectorAll(
+      "iframe[data-tally-src]:not([src])"
+      ).forEach(function (frame) {
+      frame.src = frame.dataset.tallySrc;
+      });
+      }
       }
 
       if (typeof Tally !== "undefined") {
-        loadForms();
+      loadForms();
       } else if (!d.querySelector('script[src="' + url + '"]')) {
-        var script = d.createElement("script");
-        script.src = url;
-        script.onload = loadForms;
-        script.onerror = loadForms;
-        d.body.appendChild(script);
+      var script = d.createElement("script");
+      script.src = url;
+      script.onload = loadForms;
+      script.onerror = loadForms;
+      d.body.appendChild(script);
       }
-    })();
+      })();
     </script>
-</main>
-<footer>&copy; 2026 Veritas Designs. All rights reserved.</footer>
+  </main>
+  <footer>&copy; 2026 Veritas Designs. All rights reserved.</footer>
 </body>
 </html>
